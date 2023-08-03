@@ -15,9 +15,15 @@ motor rightsideMotorA = motor(PORT17, ratio6_1, true);
 motor rightsideMotorB = motor(PORT16, ratio6_1, true);
 motor_group rightside = motor_group(rightsideMotorA, rightsideMotorB);
 controller Controller1 = controller(primary);
-motor Intakes = motor(PORT10, ratio6_1, false);
-motor Cata = motor(PORT20, ratio36_1, true);
+motor Cata1 = motor(PORT20, ratio36_1, true);
+motor Cata2 = motor(PORT12, ratio36_1, false);
 rotation CataRotation = rotation(PORT13, false);
+distance Distance = distance(PORT8);
+motor leftIntake = motor(PORT9);
+motor rightIntake = motor(PORT10, true);
+motor_group Intakes = motor_group(leftIntake, rightIntake);
+//Cata Motor Group
+motor_group Cata = motor_group(Cata1, Cata2);
 
 // VEXcode generated functions
 // define variable for remote controller enable/disable

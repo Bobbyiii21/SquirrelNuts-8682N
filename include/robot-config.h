@@ -6,9 +6,15 @@ extern brain Brain;
 extern motor_group leftside;
 extern motor_group rightside;
 extern controller Controller1;
-extern motor Intakes;
-extern motor Cata;
+extern motor Cata1;
+extern motor Cata2;
 extern rotation CataRotation;
+extern motor_group Cata;
+extern distance Distance;
+extern motor leftIntake;
+extern motor rightIntake;
+extern motor_group Intakes;
+
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
  * 
